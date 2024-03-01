@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt.gen.rsarte/com.dslfoundry.umlrt.gen.rsarte.mpl" folder="generators" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt/com.dslfoundry.umlrt.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.rsarte.importer.plugin/com.dslfoundry.umlrt.rsarte.importer.plugin.msd" folder="importers" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.rsarte.importer.runtime/com.dslfoundry.umlrt.rsarte.importer.runtime.msd" folder="importers" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.sandbox/com.dslfoundry.umlrt.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
