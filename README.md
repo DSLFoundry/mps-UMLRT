@@ -1,7 +1,7 @@
 # mps-UMLRT
 Implementation of a subset of the MARTE (UML-RT) UML language profile
 
-The MPS project is migrated to MPS 2022.2.
+The MPS project is migrated to MPS 2022.3. For an MPS 2022.2-based version, please see the branch archive/mps20222.
 
 See license subdirectory for the various components used and their licenses.
 

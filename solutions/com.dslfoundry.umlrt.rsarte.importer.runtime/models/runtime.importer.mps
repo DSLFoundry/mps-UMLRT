@@ -11005,7 +11005,7 @@
                 <ref role="3cqZAo" node="6PW2SmNRrQW" resolve="protocolParentNode" />
               </node>
               <node concept="3Tsc0h" id="6PW2SmNRJiQ" role="2OqNvi">
-                <ref role="3TtcxE" to="g2j0:74n11e5QkLq" resolve="Protocols" />
+                <ref role="3TtcxE" to="g2j0:74n11e5QkLq" resolve="protocols" />
               </node>
             </node>
             <node concept="TSZUe" id="6PW2SmNROuO" role="2OqNvi">
@@ -12349,7 +12349,7 @@
                               <ref role="3cqZAo" node="7qhAI7sZ24n" resolve="capsuleNode" />
                             </node>
                             <node concept="3Tsc0h" id="7qhAI7tCDAY" role="2OqNvi">
-                              <ref role="3TtcxE" to="g2j0:74n11e5Qnj2" resolve="capsuleParts" />
+                              <ref role="3TtcxE" to="g2j0:74n11e5Qnj2" resolve="activeClassParts" />
                             </node>
                           </node>
                           <node concept="TSZUe" id="7qhAI7tCJYy" role="2OqNvi">
@@ -12603,7 +12603,7 @@
                 <ref role="3cqZAo" node="6PW2SmNY_qs" resolve="parentPackageNode" />
               </node>
               <node concept="3Tsc0h" id="6PW2SmNZ75t" role="2OqNvi">
-                <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="capsules" />
+                <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="activeClasses" />
               </node>
             </node>
             <node concept="TSZUe" id="6PW2SmNZdXa" role="2OqNvi">
@@ -16964,7 +16964,7 @@
                         <ref role="3cqZAo" node="7qhAI7tHygf" resolve="parentPackageNode" />
                       </node>
                       <node concept="3Tsc0h" id="7qhAI7tHTdO" role="2OqNvi">
-                        <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="capsules" />
+                        <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="activeClasses" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="7qhAI7tI0hI" role="2OqNvi">
@@ -17038,7 +17038,7 @@
                 <ref role="3cqZAo" node="6PW2SmO0saY" resolve="capsulePartNode" />
               </node>
               <node concept="3TrEf2" id="6PW2SmO0PAx" role="2OqNvi">
-                <ref role="3Tt5mk" to="g2j0:74n11e5QmPr" resolve="capsule" />
+                <ref role="3Tt5mk" to="g2j0:74n11e5QmPr" resolve="activeClass" />
               </node>
             </node>
             <node concept="37vLTw" id="6PW2SmO19qD" role="37vLTx">
@@ -18613,7 +18613,7 @@
                                 <ref role="3cqZAo" node="7qhAI7tWuaX" resolve="parentPackageNode" />
                               </node>
                               <node concept="3Tsc0h" id="7qhAI7tWubA" role="2OqNvi">
-                                <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="capsules" />
+                                <ref role="3TtcxE" to="g2j0:5Ru1zenj1Vk" resolve="activeClasses" />
                               </node>
                             </node>
                             <node concept="TSZUe" id="7qhAI7tWubB" role="2OqNvi">
@@ -18977,7 +18977,7 @@
                 <ref role="3cqZAo" node="6PW2SmO7Zy0" resolve="connectorEndNode" />
               </node>
               <node concept="3TrEf2" id="6PW2SmOaRsX" role="2OqNvi">
-                <ref role="3Tt5mk" to="g2j0:6PW2SmO6JL0" resolve="capsule" />
+                <ref role="3Tt5mk" to="g2j0:6PW2SmO6JL0" resolve="activeClass" />
               </node>
             </node>
           </node>
