@@ -21,38 +21,38 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="hu10" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.common.util(com.dslfoundry.model.importer.runtime/)" />
-    <import index="roop" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.resource(com.dslfoundry.model.importer.runtime/)" />
-    <import index="env9" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml(com.dslfoundry.model.importer.runtime/)" />
-    <import index="iuoz" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore(com.dslfoundry.model.importer.runtime/)" />
-    <import index="dvsd" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.util(com.dslfoundry.model.importer.runtime/)" />
-    <import index="laez" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.util(com.dslfoundry.model.importer.runtime/)" />
-    <import index="tz6t" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xmi.impl(com.dslfoundry.model.importer.runtime/)" />
-    <import index="oznr" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resource(com.dslfoundry.model.importer.runtime/)" />
+    <import index="hu10" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.common.util(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="roop" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.resource(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="env9" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="iuoz" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="dvsd" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.util(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="laez" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.util(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="tz6t" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xmi.impl(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="oznr" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resource(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="vume" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.internal.resource(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
-    <import index="abgp" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xmi(com.dslfoundry.model.importer.runtime/)" />
+    <import index="abgp" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xmi(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="p34w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.xml.sax.helpers(JDK/)" />
-    <import index="62x7" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.impl(com.dslfoundry.model.importer.runtime/)" />
-    <import index="pcko" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml(com.dslfoundry.model.importer.runtime/)" />
-    <import index="hulx" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.resource.impl(com.dslfoundry.model.importer.runtime/)" />
-    <import index="xe88" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml.util(com.dslfoundry.model.importer.runtime/)" />
-    <import index="pld2" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml.impl(com.dslfoundry.model.importer.runtime/)" />
-    <import index="uoxm" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.types(com.dslfoundry.model.importer.runtime/)" />
-    <import index="8mvv" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.profile.standard(com.dslfoundry.model.importer.runtime/)" />
-    <import index="xu9" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.default_(com.dslfoundry.model.importer.runtime/)" />
-    <import index="tzdx" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrusrt.umlrt.tooling.rsa.umlrt(com.dslfoundry.model.importer.runtime/)" />
-    <import index="18mb" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.umlnotation(com.dslfoundry.model.importer.runtime/)" />
-    <import index="l4p3" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.profilebase(com.dslfoundry.model.importer.runtime/)" />
-    <import index="hi7s" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.RSAToPapyrusParameters(com.dslfoundry.model.importer.runtime/)" />
-    <import index="n46c" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resources.util(com.dslfoundry.model.importer.runtime/)" />
+    <import index="62x7" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.impl(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="pcko" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="hulx" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.resource.impl(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="xe88" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml.util(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="pld2" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.mapping.ecore2xml.impl(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="uoxm" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.types(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="8mvv" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.profile.standard(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="xu9" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.default_(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="tzdx" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrusrt.umlrt.tooling.rsa.umlrt(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="18mb" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.umlnotation(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="l4p3" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.profilebase(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="hi7s" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.papyrus.interoperability.rsa.RSAToPapyrusParameters(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
+    <import index="n46c" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resources.util(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
-    <import index="mrik" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resources(com.dslfoundry.model.importer.runtime/)" />
+    <import index="mrik" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.uml2.uml.resources(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="g2j0" ref="r:c57e9313-b11f-45dc-a9e9-d45d674c3e5e(com.dslfoundry.umlrt.structure)" />
     <import index="tpdg" ref="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" />
     <import index="c0n6" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.comparator(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="z88d" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.output(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="et0u" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.monitor(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
-    <import index="8oaq" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io(com.dslfoundry.model.importer.runtime/)" />
+    <import index="8oaq" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="8dlq" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.input(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="utc4" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.serialization(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="hmqo" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.apache.commons.io.filefilter(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
@@ -67,7 +67,7 @@
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="g0vm" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xml.type.impl(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
-    <import index="644c" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xml.type(com.dslfoundry.model.importer.runtime/)" />
+    <import index="644c" ref="9a7f6457-f669-4658-9e44-56f05d137def/java:org.eclipse.emf.ecore.xml.type(com.dslfoundry.umlrt.rsarte.importer.runtime/)" />
     <import index="hu11" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="9sez" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:org.apache.commons.collections4(de.q60.mps.collections.libs/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" implicit="true" />
@@ -4543,7 +4543,7 @@
                   <node concept="liA8E" id="6D6wOyJKf0x" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                     <node concept="10M0yZ" id="6D6wOyJKf0y" role="37wK5m">
-                      <ref role="1PxDUh" to="roop:~ContentHandler$Registry" resolve="Registry" />
+                      <ref role="1PxDUh" to="roop:~ContentHandler$Registry" resolve="ContentHandler.Registry" />
                       <ref role="3cqZAo" to="roop:~ContentHandler$Registry.NORMAL_PRIORITY" resolve="NORMAL_PRIORITY" />
                     </node>
                   </node>

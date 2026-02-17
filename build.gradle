@@ -11,8 +11,8 @@ buildscript {
 
 // ------------- DEPENDENCY VERSIONS ------------- 
 // Dependency versions
-ext.mpsVersion = '2023.2.+'
-ext.iets3OpenSourceVersion = '2023.2.+'
+ext.mpsVersion = '2024.1.+'
+ext.iets3OpenSourceVersion = '2024.1.+'
 // ------------- /DEPENDENCY VERSIONS -------------
 
 
