@@ -22,10 +22,12 @@
     <import index="s6c0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.prefs(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
+    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -34,6 +36,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -173,6 +176,11 @@
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
@@ -244,6 +252,7 @@
     <property role="TrG5h" value="importRSARTEModelAction" />
     <property role="2uzpH1" value="Import RSA-RTE Model" />
     <property role="1rBW0U" value="true" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="1DS2jV" id="1iReZNrXXd6" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -268,54 +277,101 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1iReZNrX_3B" role="3cqZAp">
-          <node concept="2YIFZM" id="1iReZNrYIli" role="3clFbG">
-            <ref role="37wK5l" to="u94q:1iReZNrYD0I" resolve="setResourceFolderLocation" />
-            <ref role="1Pybhc" to="u94q:5iaIX8ORqFU" resolve="UMLResourcesUtilExtended" />
-            <node concept="3cpWs3" id="1iReZNrYO25" role="37wK5m">
-              <node concept="Xl_RD" id="1iReZNrYO2l" role="3uHU7w">
-                <property role="Xl_RC" value="/resource/" />
-              </node>
-              <node concept="2OqwBi" id="1iReZNrYMA8" role="3uHU7B">
-                <node concept="2OqwBi" id="1iReZNrYKPE" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1iReZNrYJmK" role="2Oq$k0">
-                    <node concept="2WthIp" id="1iReZNrYITD" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="1iReZNrYK2$" role="2OqNvi">
-                      <ref role="2WH_rO" node="1iReZNrXXd6" resolve="project" />
+        <node concept="3clFbH" id="6D6wOyJTb13" role="3cqZAp" />
+        <node concept="3SKdUt" id="6D6wOyJTgY6" role="3cqZAp">
+          <node concept="1PaTwC" id="6D6wOyJTgY7" role="1aUNEU">
+            <node concept="3oM_SD" id="6D6wOyJTh4V" role="1PaTwD">
+              <property role="3oM_SC" value="Schedule" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh56" role="1PaTwD">
+              <property role="3oM_SC" value="UI" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh5a" role="1PaTwD">
+              <property role="3oM_SC" value="outside" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh5j" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh5o" role="1PaTwD">
+              <property role="3oM_SC" value="current" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh5x" role="1PaTwD">
+              <property role="3oM_SC" value="command/write" />
+            </node>
+            <node concept="3oM_SD" id="6D6wOyJTh5K" role="1PaTwD">
+              <property role="3oM_SC" value="action" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6D6wOyJTdw1" role="3cqZAp">
+          <node concept="2OqwBi" id="6D6wOyJTeE7" role="3clFbG">
+            <node concept="2YIFZM" id="6D6wOyJTe66" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="6D6wOyJTfWN" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="6D6wOyJTfXS" role="37wK5m">
+                <node concept="3clFbS" id="6D6wOyJTfXV" role="1bW5cS">
+                  <node concept="3clFbF" id="1iReZNrX_3B" role="3cqZAp">
+                    <node concept="2YIFZM" id="1iReZNrYIli" role="3clFbG">
+                      <ref role="37wK5l" to="u94q:1iReZNrYD0I" resolve="setResourceFolderLocation" />
+                      <ref role="1Pybhc" to="u94q:5iaIX8ORqFU" resolve="UMLResourcesUtilExtended" />
+                      <node concept="3cpWs3" id="1iReZNrYO25" role="37wK5m">
+                        <node concept="Xl_RD" id="1iReZNrYO2l" role="3uHU7w">
+                          <property role="Xl_RC" value="/resource/" />
+                        </node>
+                        <node concept="2OqwBi" id="1iReZNrYMA8" role="3uHU7B">
+                          <node concept="2OqwBi" id="1iReZNrYKPE" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1iReZNrYJmK" role="2Oq$k0">
+                              <node concept="2WthIp" id="1iReZNrYITD" role="2Oq$k0" />
+                              <node concept="1DTwFV" id="1iReZNrYK2$" role="2OqNvi">
+                                <ref role="2WH_rO" node="1iReZNrXXd6" resolve="project" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1iReZNrYMbf" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="1iReZNrYNv2" role="2OqNvi">
+                            <ref role="37wK5l" to="4nm9:~Project.getBasePath()" resolve="getBasePath" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
-                  <node concept="liA8E" id="1iReZNrYMbf" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                  <node concept="3clFbF" id="LjDBSPssnJ" role="3cqZAp">
+                    <node concept="2YIFZM" id="LjDBSPst$Z" role="3clFbG">
+                      <ref role="37wK5l" node="LjDBSPssUd" resolve="importRSARTEModel" />
+                      <ref role="1Pybhc" node="LjDBSPsrpH" resolve="RSARTEModelImporterUI" />
+                      <node concept="2OqwBi" id="LjDBSPstQe" role="37wK5m">
+                        <node concept="2WthIp" id="LjDBSPstBF" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="3J0$iR5fowm" role="2OqNvi">
+                          <ref role="2WH_rO" node="3J0$iR5fo5k" resolve="module" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6D6wOyJT5$M" role="37wK5m">
+                        <node concept="2WthIp" id="6D6wOyJT5$P" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="6D6wOyJT5$R" role="2OqNvi">
+                          <ref role="2WH_rO" node="1iReZNrXXd6" resolve="project" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="RRSsy" id="4DcigCUFzgk" role="3cqZAp">
+                    <property role="RRSoG" value="h1akgim/info" />
+                    <node concept="3cpWs3" id="4DcigCUFzgl" role="RRSoy">
+                      <node concept="2YIFZM" id="4DcigCUFzgm" role="3uHU7w">
+                        <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+                        <ref role="37wK5l" to="28m1:~LocalDateTime.now()" resolve="now" />
+                      </node>
+                      <node concept="Xl_RD" id="4DcigCUFzgn" role="3uHU7B">
+                        <property role="Xl_RC" value="IMPORT_END:" />
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="1iReZNrYNv2" role="2OqNvi">
-                  <ref role="37wK5l" to="4nm9:~Project.getBasePath()" resolve="getBasePath" />
-                </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="LjDBSPssnJ" role="3cqZAp">
-          <node concept="2YIFZM" id="LjDBSPst$Z" role="3clFbG">
-            <ref role="37wK5l" node="LjDBSPssUd" resolve="importRSARTEModel" />
-            <ref role="1Pybhc" node="LjDBSPsrpH" resolve="RSARTEModelImporterUI" />
-            <node concept="2OqwBi" id="LjDBSPstQe" role="37wK5m">
-              <node concept="2WthIp" id="LjDBSPstBF" role="2Oq$k0" />
-              <node concept="1DTwFV" id="3J0$iR5fowm" role="2OqNvi">
-                <ref role="2WH_rO" node="3J0$iR5fo5k" resolve="module" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="RRSsy" id="4DcigCUFzgk" role="3cqZAp">
-          <property role="RRSoG" value="h1akgim/info" />
-          <node concept="3cpWs3" id="4DcigCUFzgl" role="RRSoy">
-            <node concept="2YIFZM" id="4DcigCUFzgm" role="3uHU7w">
-              <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-              <ref role="37wK5l" to="28m1:~LocalDateTime.now()" resolve="now" />
-            </node>
-            <node concept="Xl_RD" id="4DcigCUFzgn" role="3uHU7B">
-              <property role="Xl_RC" value="IMPORT_END:" />
             </node>
           </node>
         </node>
@@ -723,18 +779,37 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="LjDBSPt3ym" role="3cqZAp">
-              <node concept="2ShNRf" id="LjDBSPt3yi" role="3clFbG">
-                <node concept="1pGfFk" id="LjDBSPt3Je" role="2ShVmc">
-                  <ref role="37wK5l" to="u94q:LjDBSPsY3W" resolve="RSARTEModelImporter" />
-                  <node concept="37vLTw" id="3J0$iR5fyMJ" role="37wK5m">
-                    <ref role="3cqZAo" node="3J0$iR5frqs" resolve="smodule" />
+            <node concept="3clFbF" id="6D6wOyJSV4Y" role="3cqZAp">
+              <node concept="2OqwBi" id="6D6wOyJT11m" role="3clFbG">
+                <node concept="2OqwBi" id="6D6wOyJSWiG" role="2Oq$k0">
+                  <node concept="37vLTw" id="6D6wOyJSV4W" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6D6wOyJSL2t" resolve="project" />
                   </node>
-                  <node concept="37vLTw" id="LjDBSPtmc3" role="37wK5m">
-                    <ref role="3cqZAo" node="LjDBSPsO0Y" resolve="rsaRteFileName" />
+                  <node concept="liA8E" id="6D6wOyJT0yp" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c4:~Project.getModelAccess()" resolve="getModelAccess" />
                   </node>
-                  <node concept="37vLTw" id="1QS9sdaXp2e" role="37wK5m">
-                    <ref role="3cqZAo" node="1QS9sdaxYlk" resolve="fileDir" />
+                </node>
+                <node concept="liA8E" id="6D6wOyJT2yy" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable)" resolve="executeCommand" />
+                  <node concept="1bVj0M" id="6D6wOyJT2Ym" role="37wK5m">
+                    <node concept="3clFbS" id="6D6wOyJT2Yp" role="1bW5cS">
+                      <node concept="3clFbF" id="LjDBSPt3ym" role="3cqZAp">
+                        <node concept="2ShNRf" id="LjDBSPt3yi" role="3clFbG">
+                          <node concept="1pGfFk" id="LjDBSPt3Je" role="2ShVmc">
+                            <ref role="37wK5l" to="u94q:LjDBSPsY3W" resolve="RSARTEModelImporter" />
+                            <node concept="37vLTw" id="3J0$iR5fyMJ" role="37wK5m">
+                              <ref role="3cqZAo" node="3J0$iR5frqs" resolve="smodule" />
+                            </node>
+                            <node concept="37vLTw" id="LjDBSPtmc3" role="37wK5m">
+                              <ref role="3cqZAo" node="LjDBSPsO0Y" resolve="rsaRteFileName" />
+                            </node>
+                            <node concept="37vLTw" id="1QS9sdaXp2e" role="37wK5m">
+                              <ref role="3cqZAo" node="1QS9sdaxYlk" resolve="fileDir" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -757,6 +832,12 @@
         <property role="TrG5h" value="smodule" />
         <node concept="3uibUv" id="3J0$iR5frqr" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6D6wOyJSL2t" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="6D6wOyJSSuW" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
     </node>
