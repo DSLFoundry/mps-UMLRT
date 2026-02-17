@@ -440,27 +440,27 @@
         </node>
         <node concept="3pjn7v" id="76szEoqpw8N" role="3pjn7O">
           <property role="TrG5h" value="toInactive" />
-          <ref role="3pjn7r" node="76szEoqpw7u" resolve="Active" />
-          <ref role="3pjn7$" node="76szEoqpw83" resolve="Inactive" />
+          <ref role="3pjn7r" node="76szEoqpw7u" />
+          <ref role="3pjn7$" node="76szEoqpw83" />
         </node>
         <node concept="3pjn7v" id="76szEoqpBzm" role="3pjn7O">
           <property role="TrG5h" value="toActive" />
-          <ref role="3pjn7r" node="76szEoqpw83" resolve="Inactive" />
-          <ref role="3pjn7$" node="76szEoqpw7u" resolve="Active" />
+          <ref role="3pjn7r" node="76szEoqpw83" />
+          <ref role="3pjn7$" node="76szEoqpw7u" />
         </node>
         <node concept="1FYJtr" id="76szEoqpXMx" role="3pjn7E" />
         <node concept="3pjn7v" id="76szEoqq6d8" role="3pjn7O">
           <property role="TrG5h" value="Initial" />
           <ref role="3pjn7r" node="76szEoqpXMx" />
-          <ref role="3pjn7$" node="76szEoqpw7u" resolve="Active" />
+          <ref role="3pjn7$" node="76szEoqpw7u" />
         </node>
         <node concept="3pjn7j" id="1rDxCCHRLkl" role="3pjn7E">
           <property role="TrG5h" value="asdsdfas" />
         </node>
         <node concept="3pjn7v" id="1rDxCCHRLpn" role="3pjn7O">
           <property role="TrG5h" value="asdasdas" />
-          <ref role="3pjn7r" node="76szEoqpw83" resolve="Inactive" />
-          <ref role="3pjn7$" node="1rDxCCHRLkl" resolve="asdsdfas" />
+          <ref role="3pjn7r" node="76szEoqpw83" />
+          <ref role="3pjn7$" node="1rDxCCHRLkl" />
           <node concept="3Oto9H" id="1rDxCCHRLtE" role="3Oto9X" />
         </node>
         <node concept="3pjn7j" id="1rDxCCHSbS7" role="3pjn7E">
@@ -468,8 +468,8 @@
         </node>
         <node concept="3pjn7v" id="1rDxCCHSbV8" role="3pjn7O">
           <property role="TrG5h" value="sdfsdfsdf" />
-          <ref role="3pjn7r" node="76szEoqpw83" resolve="Inactive" />
-          <ref role="3pjn7$" node="1rDxCCHSbS7" resolve="sdfsdf" />
+          <ref role="3pjn7r" node="76szEoqpw83" />
+          <ref role="3pjn7$" node="1rDxCCHSbS7" />
         </node>
       </node>
       <node concept="3pkH90" id="1rDxCCHRLkw" role="2Es8sy" />

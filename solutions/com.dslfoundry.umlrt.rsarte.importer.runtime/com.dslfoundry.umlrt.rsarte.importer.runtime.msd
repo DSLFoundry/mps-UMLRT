@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.dslfoundry.umlrt.rsarte.importer.runtime" uuid="9a7f6457-f669-4658-9e44-56f05d137def" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="org.eclipse.emf.common_2.13.0.v20170609-0707.jar" />
       <sourceRoot location="org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar" />
       <sourceRoot location="org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar" />
