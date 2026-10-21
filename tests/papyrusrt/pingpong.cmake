@@ -1,0 +1,25 @@
+if(NOT DEFINED PINGPONG_EXECUTABLE)
+    message(FATAL_ERROR "PINGPONG_EXECUTABLE must identify the generated capsule executable.")
+endif()
+
+execute_process(COMMAND "${PINGPONG_EXECUTABLE}"
+    RESULT_VARIABLE result OUTPUT_VARIABLE output ERROR_VARIABLE error TIMEOUT 10)
+if(NOT "${result}" STREQUAL "0")
+    message(FATAL_ERROR "Ping/Pong failed (${result}).\n${output}\n${error}")
+endif()
+
+string(REPLACE "\r\n" "\n" output "${output}")
+if(NOT output MATCHES "^Controller \"Default\" running\\.\n" OR
+   NOT output MATCHES "\nController Default is exiting exit value (0+|0x0+|\\(nil\\))\\.\n$")
+    message(FATAL_ERROR "Missing normal RTS startup/shutdown trace:\n${output}")
+endif()
+string(REGEX REPLACE "^Controller \"Default\" running\\.\n" "" output "${output}")
+string(REGEX REPLACE "Controller Default is exiting exit value (0+|0x0+|\\(nil\\))\\.\n$" "" output "${output}")
+set(expected "pinger: start\nponger: ping\npinger: pong 1\nponger: ping\npinger: pong 2\nponger: ping\npinger: pong 3\npinger: done\n")
+if(DEFINED EXPECTED_TRACE_FILE)
+    file(READ "${EXPECTED_TRACE_FILE}" expected)
+    string(REPLACE "\r\n" "\n" expected "${expected}")
+endif()
+if(NOT "${output}" STREQUAL "${expected}" OR NOT "${error}" STREQUAL "")
+    message(FATAL_ERROR "Unexpected Ping/Pong trace.\nExpected:\n${expected}\nActual:\n${output}\nStderr:\n${error}")
+endif()

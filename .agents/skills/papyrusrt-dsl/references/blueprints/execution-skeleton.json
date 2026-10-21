@@ -1,0 +1,19 @@
+{
+  "concept": "com.dslfoundry.umlrt.exec.structure.ExecutionModel",
+  "properties": [
+    {"name": "name", "value": "Declarations"}
+  ],
+  "children": [
+    {
+      "role": "capsules",
+      "nodes": [
+        {
+          "concept": "com.dslfoundry.umlrt.exec.structure.ExecutionCapsule",
+          "properties": [
+            {"name": "name", "value": "Pinger"}
+          ]
+        }
+      ]
+    }
+  ]
+}

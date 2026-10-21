@@ -1,0 +1,17 @@
+trace.info text merge=mps
+generated text merge=mps
+dependencies text merge=mps
+*.mpl text merge=mps
+*.msd text merge=mps
+*.devkit text merge=mps
+*.mpr text merge=mps
+*.mpsr text merge=mps
+*.model text merge=mps
+*.mps text merge=mps
+licenses/apache_commons_io_NOTICE.txt -text -whitespace
+licenses/eclipse_emf_ecore_about.html -text -whitespace
+licenses/mbeddr_core_LICENSE.txt -text -whitespace
+licenses/mbeddr_core_about.txt -text -whitespace
+licenses/mbeddr_cpp_license.html -text -whitespace
+third_party/mbeddr-metadata/* -text -whitespace
+.agents/skills/diagnosing-bugs/scripts/*.sh text eol=lf

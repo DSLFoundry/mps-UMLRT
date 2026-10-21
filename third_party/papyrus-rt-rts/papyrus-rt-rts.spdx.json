@@ -1,0 +1,23 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "name": "mps-UMLRT Papyrus-RT RTS",
+  "documentNamespace": "https://github.com/DSLFoundry/mps-UMLRT/third_party/papyrus-rt-rts/fde41ff0ce90757257c029eccd14648ff9481001",
+  "creationInfo": {
+    "created": "2026-09-01T00:00:00Z",
+    "creators": [
+      "Tool: GitHub Copilot CLI"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-PapyrusRTS",
+      "name": "Papyrus-RT C++ Runtime System",
+      "versionInfo": "releases/1.0.0",
+      "downloadLocation": "https://eclipse.googlesource.com/gerrit/papyrus-rt/org.eclipse.papyrus-rt/+/fde41ff0ce90757257c029eccd14648ff9481001",
+      "licenseConcluded": "EPL-1.0",
+      "licenseDeclared": "EPL-1.0",
+      "copyrightText": "Copyright (c) 2014-2016 Zeligsoft (2009) Limited and others."
+    }
+  ]
+}

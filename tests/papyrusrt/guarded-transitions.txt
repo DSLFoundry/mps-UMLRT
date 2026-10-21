@@ -1,0 +1,20 @@
+top_driver: native initialization
+top_worker: child guard false first
+top_worker: parent alternative false
+top_worker: parent guard first
+top_worker: exit first
+top_worker: effect first
+top_worker: after effect
+top_worker: enter second
+top_worker: child guard false second
+top_worker: parent alternative false
+top_worker: parent guard second
+top_worker: exit second
+top_worker: effect first
+top_worker: parent fallback selected
+top_worker: after effect
+top_worker: enter second
+top_worker: child guard true
+top_worker: exit second
+top_worker: child selected
+top_worker: enter second

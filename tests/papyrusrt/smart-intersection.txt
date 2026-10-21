@@ -1,0 +1,18 @@
+top_controller: enter operational
+top_controller: grant north
+top_controller: enter north
+top_north: green
+top_controller: exit north
+top_controller: clear north
+top_controller: enter clearance
+top_north: red
+top_controller: exit clearance
+top_controller: grant east
+top_controller: enter east
+top_east: green
+top_controller: exit east
+top_controller: clear east
+top_east: red
+top_controller: exit operational
+top_controller: cycle complete
+top_controller: safe shutdown

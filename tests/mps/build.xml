@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="umlrt-model-tests" default="test" basedir="../..">
+    <property name="mps.home" location="${basedir}/build/mps"/>
+    <property name="reports.dir" location="${basedir}/build/reports/model-tests"/>
+    <property name="test.workspace" location="${basedir}/build/tmp/testModels"/>
+    <property name="mbeddr.core" location="${basedir}/build/dependencies/mbeddr"/>
+    <property name="mbeddr.plattform" location="${basedir}/build/dependencies/com.mbeddr.platform"/>
+    <property name="mbeddr.cpp" location="${basedir}/build/mbeddr-cpp/mbeddr.cpp"/>
+    <property name="iets3.os" location="${basedir}/build/artifacts/org.iets3.opensource"/>
+    <property name="iets3.os.scripts-all" location="${basedir}/build/artifacts/org.iets3.opensource.allScripts.build"/>
+    <path id="mps.ant.classpath">
+        <fileset dir="${mps.home}/lib" includes="*.jar"/>
+        <fileset dir="${mps.home}/lib/mpsant" includes="*.jar"/>
+    </path>
+    <taskdef name="launchtests" classname="jetbrains.mps.build.ant.junit.LaunchTestTask"
+             classpathref="mps.ant.classpath"/>
+    <target name="test">
+        <mkdir dir="${reports.dir}"/>
+        <mkdir dir="${test.workspace}/config"/>
+        <mkdir dir="${test.workspace}/system"/>
+        <mkdir dir="${test.workspace}/project/.mps"/>
+        <echo file="${test.workspace}/project/.mps/modules.xml" encoding="UTF-8"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+    <component name="MPSProject">
+        <projectModules/>
+    </component>
+</project>
+]]></echo>
+        <launchtests mpsHome="${mps.home}" haltOnFailure="true"
+                     autoPluginDiscovery="false" reports="${reports.dir}"
+                     jnaLibraryPath="lib/jna/${os.arch}">
+            <!-- Automatic mode ignores explicit plugins; released platform modules need these optional runtimes. -->
+            <plugin path="${mps.home}/plugins/mps-core" id="jetbrains.mps.core"/>
+            <plugin path="${mps.home}/plugins/mps-ide" id="jetbrains.mps.ide"/>
+            <plugin path="${mps.home}/plugins/mps-testing" id="jetbrains.mps.testing"/>
+            <plugin path="${mps.home}/plugins/mps-junit5" id="jetbrains.mps.junit5"/>
+            <plugin path="${mps.home}/plugins/jetpad" id="jetbrains.jetpad"/>
+            <plugin path="${mps.home}/plugins/java" id="com.intellij.java"/>
+            <plugin path="${mps.home}/plugins/mps-ant-make" id="jetbrains.mps.tool.make"/>
+            <plugin path="${mps.home}/plugins/mps-build" id="jetbrains.mps.build"/>
+            <plugin path="${mps.home}/plugins/mps-build-ui" id="jetbrains.mps.build.ui"/>
+            <plugin path="${mps.home}/plugins/mps-console" id="jetbrains.mps.console"/>
+            <plugin path="${mps.home}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions"/>
+            <plugin path="${mps.home}/plugins/mps-debugger-api" id="jetbrains.mps.debugger.api"/>
+            <plugin path="${mps.home}/plugins/mps-debugger-java" id="jetbrains.mps.debugger.java"/>
+            <plugin path="${mps.home}/plugins/mps-devkit" id="jetbrains.mps.ide.devkit"/>
+            <plugin path="${mps.home}/plugins/mps-diagram-editor" id="jetbrains.mps.editor.diagram"/>
+            <plugin path="${mps.home}/plugins/mps-execution-api" id="jetbrains.mps.execution.api"/>
+            <plugin path="${mps.home}/plugins/mps-execution-configurations" id="jetbrains.mps.execution.configurations"/>
+            <plugin path="${mps.home}/plugins/mps-execution-languages" id="jetbrains.mps.execution.languages"/>
+            <plugin path="${mps.home}/plugins/mps-git4idea" id="jetbrains.mps.git4idea.stubs"/>
+            <plugin path="${mps.home}/plugins/mps-httpsupport" id="jetbrains.mps.ide.httpsupport"/>
+            <plugin path="${mps.home}/plugins/mps-java" id="jetbrains.mps.ide.java"/>
+            <plugin path="${mps.home}/plugins/mps-kotlin" id="jetbrains.mps.kotlin"/>
+            <plugin path="${mps.home}/plugins/mps-make" id="jetbrains.mps.ide.make"/>
+            <plugin path="${mps.home}/plugins/mps-memtool" id="jetbrains.mps.ide.memtool"/>
+            <plugin path="${mps.home}/plugins/mps-migration" id="jetbrains.mps.ide.migration.workbench"/>
+            <plugin path="${mps.home}/plugins/mps-modelchecker" id="jetbrains.mps.ide.modelchecker"/>
+            <plugin path="${mps.home}/plugins/mps-navbar" id="jetbrains.mps.navbar"/>
+            <plugin path="${mps.home}/plugins/mps-project-migrations" id="jetbrains.mps.ide.mpsmigration"/>
+            <plugin path="${mps.home}/plugins/mps-rcp" id="jetbrains.mps.rcp"/>
+            <plugin path="${mps.home}/plugins/mps-repository" id="jetbrains.mps.repository"/>
+            <plugin path="${mps.home}/plugins/mps-samples" id="jetbrains.mps.samples"/>
+            <plugin path="${mps.home}/plugins/mps-spellcheck" id="jetbrains.mps.editor.spellcheck"/>
+            <plugin path="${mps.home}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips"/>
+            <plugin path="${mps.home}/plugins/mps-trove" id="jetbrains.mps.trove"/>
+            <plugin path="${mps.home}/plugins/mps-vcs" id="jetbrains.mps.vcs"/>
+            <plugin path="${mps.home}/plugins/vcs-git" id="Git4Idea"/>
+            <library file="${basedir}/languages"/>
+            <library file="${basedir}/solutions"/>
+            <library file="${basedir}/devkits"/>
+            <library file="${basedir}/_spreferences"/>
+            <library file="${mbeddr.core}"/>
+            <library file="${mbeddr.plattform}"/>
+            <library file="${mbeddr.cpp}"/>
+            <library file="${iets3.os}"/>
+            <library file="${iets3.os.scripts-all}"/>
+            <!-- Keep source modules library-owned when tests open their UI project after discovery. -->
+            <project path="${test.workspace}/project"/>
+            <testmodules>
+                <fileset dir="${basedir}/solutions/com.dslfoundry.umlrt.tests"
+                         includes="com.dslfoundry.umlrt.tests.msd"/>
+            </testmodules>
+            <jvmargs>
+                <arg value="-Xmx4g"/>
+                <arg value="-ea"/>
+                <arg value="-Djava.awt.headless=true"/>
+                <arg value="-Didea.home.path=${mps.home}"/>
+                <arg value="-Didea.config.path=${test.workspace}/config"/>
+                <arg value="-Didea.system.path=${test.workspace}/system"/>
+            </jvmargs>
+        </launchtests>
+    </target>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/devkits/com.dslfoundry.umlrt.papyrusrt.devkit/com.dslfoundry.umlrt.papyrusrt.devkit.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt.exec/com.dslfoundry.umlrt.exec.mpl" folder="execution" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt.gen.papyrusrt/com.dslfoundry.umlrt.gen.papyrusrt.mpl" folder="generators" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt.gen.rsarte/com.dslfoundry.umlrt.gen.rsarte.mpl" folder="generators" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.umlrt/com.dslfoundry.umlrt.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.build/com.dslfoundry.umlrt.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.papyrusrt.runtime/com.dslfoundry.umlrt.papyrusrt.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.papyrusrt.sandbox/com.dslfoundry.umlrt.papyrusrt.sandbox.msd" folder="sandbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.rsarte.importer.plugin/com.dslfoundry.umlrt.rsarte.importer.plugin.msd" folder="importers" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.rsarte.importer.runtime/com.dslfoundry.umlrt.rsarte.importer.runtime.msd" folder="importers" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.sandbox/com.dslfoundry.umlrt.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.umlrt.tests/com.dslfoundry.umlrt.tests.msd" folder="tests" />
+    </projectModules>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+[
+  {
+    "concept": "com.dslfoundry.umlrt.structure.Package",
+    "properties": [{"name": "name", "value": "PapyrusBlueprintPackage"}],
+    "children": [{
+      "role": "activeClasses",
+      "nodes": [{
+        "concept": "com.dslfoundry.umlrt.structure.ActiveClass",
+        "properties": [{"name": "name", "value": "PapyrusBlueprintTop"}],
+        "children": [{
+          "role": "initialization",
+          "nodes": [
+            {
+              "concept": "com.dslfoundry.umlrt.structure.TraceAction",
+              "properties": [{"name": "text", "value": "ready"}]
+            },
+            {"concept": "com.dslfoundry.umlrt.structure.StopAction"}
+          ]
+        }]
+      }]
+    }]
+  },
+  {
+    "concept": "com.dslfoundry.umlrt.structure.PapyrusApplication",
+    "properties": [{"name": "name", "value": "PapyrusBlueprintApplication"}],
+    "references": [{"role": "top", "target": "PapyrusBlueprintTop"}]
+  }
+]
