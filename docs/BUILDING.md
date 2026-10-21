@@ -27,7 +27,7 @@ From the repository root in PowerShell:
 ```
 
 `check` makes the project, runs model/editor tests, checks models and compares
-the legacy-generator goldens. `verifyPapyrusPingPong` regenerates the Papyrus-RT
+the legacy characterization goldens. `verifyPapyrusPingPong` regenerates the Papyrus-RT
 examples, compares their goldens, builds the runtime and generated C++, and runs
 the native tests. Both are required for full verification.
 
@@ -73,7 +73,6 @@ All generation and model-validation tasks below depend on `makeProject`.
 | `makeProject` | Headless Make of project languages, generators and solutions |
 | `testModels` | Run all model/editor JUnit suites with an isolated MPS test project |
 | `checkModels` | Check the complete project; errors fail the task |
-| `verifyRsarteGoldens` | Compare legacy output with characterization snapshots |
 | `generatePapyrusApplications` | Generate all three Papyrus example models |
 | `verifyPapyrusGoldens` | Compare twelve generated C++ files with expected sources |
 | `buildPapyrusRts` | Build the vendored runtime from a writable source copy |

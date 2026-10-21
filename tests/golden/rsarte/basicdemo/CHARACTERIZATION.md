@@ -3,9 +3,8 @@
 These files pin the legacy text generator's capsule output for IDE Make and
 headless generation. They are not examples of valid or complete C++.
 
-Run `verifyRsarteGoldens` from the repository root to compare generated output.
-The comparison normalizes CRLF/LF because the plaintext templates mix line
-endings.
+Run `check` from the repository root to compare generated output. The
+comparison normalizes CRLF/LF because the plaintext templates mix line endings.
 
 Known limitations:
 

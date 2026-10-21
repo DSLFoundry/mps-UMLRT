@@ -231,7 +231,7 @@ val checkModels by tasks.registering(MpsCheck::class) {
     maxHeapSize = "4G"
 }
 
-val generateRsarteBaseline by tasks.registering(MpsGenerate::class) {
+val generateLegacyBaseline by tasks.registering(MpsGenerate::class) {
     dependsOn(makeProject)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     projectLocation.set(rootProject.projectDir)
@@ -259,8 +259,8 @@ val generatePapyrusApplications by tasks.registering(MpsGenerate::class) {
     maxHeapSize = "4G"
 }
 
-val verifyRsarteGoldens by tasks.registering {
-    dependsOn(generateRsarteBaseline)
+val verifyLegacyGoldens by tasks.registering {
+    dependsOn(generateLegacyBaseline)
     group = "verification"
     description = "Compares normalized legacy output with its characterization goldens."
 
@@ -394,7 +394,7 @@ val verifyPapyrusPingPong by tasks.registering(Exec::class) {
 }
 
 tasks.named("check") {
-    dependsOn(checkModels, testModels, verifyRsarteGoldens)
+    dependsOn(checkModels, testModels, verifyLegacyGoldens)
 }
 
 tasks.named("assemble") {
